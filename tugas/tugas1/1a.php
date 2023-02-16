@@ -1,7 +1,7 @@
 <?php
 
-    $a = "Topi";
-    $b = "Bundar";
+$a = "Topi";
+$b = "Bundar";
 
 ?>
 
@@ -14,10 +14,6 @@
     <title>Tugas 1a</title>
 </head>
 <body>
-    <h2>
-        <i>
-            <?php echo ''.$a.' Saya '.$b.', '.$b.' '.$a.' saya.'; ?>
-        <i>
-    </h2>
+    <h2><i><?php echo '"'.$a.' Saya '.$b.', '.$b.' '.$a.' saya."'; ?><i></h2>
 </body>
 </html>
