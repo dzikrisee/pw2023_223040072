@@ -29,6 +29,7 @@
              echo "Mata Kuliah : $mataKuliah"  . "</br>";
              echo "NRP : $nrp" . "</br>";
              echo "Usia : $umur";
+
         ?>
     </h3>
 </body>
