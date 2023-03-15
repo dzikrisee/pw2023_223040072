@@ -1,6 +1,6 @@
 <?php
 
-// disini kita buat variabel array dengan 6 buah elemen
+// variabel array dengan 6 buah elemen
 $kata = ["epan", "cipta", "akan", "u", "asa", "esok"];
 
 ?>
