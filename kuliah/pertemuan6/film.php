@@ -1,20 +1,41 @@
 <?php 
     $daftarFilm = [
-        [
+        [ // no.1
             'poster' => 'antman.jpg',
             'Judul' => 'The Antman',
             'Tahun' => '2015',
-            'Genre' => 'Action',
-            'Pemeran Utama' => ['Paul Rudd', 'Michael Douglas', 'Evangeline Lilly'],
+            'Genre' => ['Action, ', 'Adventure, ', 'Comedy'],
+            'Pemeran Utama' => ['Paul Rudd, ', 'Michael Douglas, ', 'Evangeline Lilly'],
             'Sutradara' => 'Peyton Reed'
         ],
-        [
+        [ // no.2
             'poster' => 'hawkey.jpg',
             'Judul' => 'Hawkey',
             'Tahun' => '2015',
-            'Genre' => 'Action',
-            'Pemeran Utama' => ['Paul Rudd, ', 'Michael Douglas', 'Evangeline Lilly'],
-            'Sutradara' => 'Peyton Reed'
+            'Genre' => ['Action, ', 'Adventure, ', 'Comedy'],
+            'Pemeran Utama' => [	
+                'Jeremy Renner, ',
+                'Hailee Steinfeld, ',
+                'Tony Dalton, ',
+                'Fra Fee, ',
+                'Brian Arcy James'],
+            'Sutradara' => 'Jonathan Igla'
+        ],      
+        [ // no.3
+            'poster' => 'thor.jpg',
+            'Judul' => 'Thor: Love and Thunder',
+            'Tahun' => '2022',
+            'Genre' => ['Action, ', 'Adventure, ', 'Comedy'],
+            'Pemeran Utama' => ['Chris Hemsworth, ', 'Natalie Portman, ', 'Christian Bale'],
+            'Sutradara' => 'Taika Waititi'
+        ],
+        [ // no.4
+            'poster' => 'galaxy.jpg',
+            'Judul' => 'Guardians of the Galaxy',
+            'Tahun' => '2014',
+            'Genre' => ['Action, ', 'Adventure, ', 'Comedy'],
+            'Pemeran Utama' => ['Chris Pratt, ', 'Zoe Saldana, ', 'Dave Bautista, ', 'Vin Diesel'],
+            'Sutradara' => 'James Gunn'
         ]
     ]
 ?>
@@ -32,16 +53,21 @@
     <?php foreach($daftarFilm as $i) { ?>
     <ul>
         <li>
-            <img src="img/<?= $i['poster']; ?>" width ="100">
+            <img src="img/<?= $i['poster']; ?>" width ="150">
         </li>
         <li>Judul : <?= $i['Judul']; ?></li>
         <li>Tahun : <?= $i['Tahun']; ?></li>
-        <li>Genre : <?= $i['Genre']; ?></li>
+        <li>Genre : </li>
+        <?php foreach($i['Genre'] as $g ) {
+            echo $g;
+        }; ?>
+        
         <li>Pemeran Utama : </li>
         <?php foreach($i['Pemeran Utama'] as $p ) {
             echo $p;
         }; ?>
         <li>Sutradara : <?= $i['Sutradara']; ?></li>
+        <br><br>
     </ul>
         <?php } ?>
 
