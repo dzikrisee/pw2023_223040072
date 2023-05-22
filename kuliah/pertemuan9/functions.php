@@ -1,17 +1,18 @@
 <?php 
-// koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "phpdasar");
+define('BASE_URL', '/PW2023_223040072/kuliah/pertemuan9/');
 
+// function dd($value)
+// {
+//     echo "<pre>";
+//     var_dump($value);
+//     echo "</pre>";
 
+//     die();
+// }
 
-function query($query) {
-    global $conn;
-    $result = mysqli_query($conn, $query);
-    $rows = [];
-    while( $row = mysqli_fetch_assoc($result) ) {
-        $rows[] = $row;
-    }
-    return $rows;
+function uriIs($url) {
+    return ($_SERVER['REQUEST_URI'] === BASE_URL . $url) ? 'active' : '';
 }
-
 ?>
+
+<!-- /PW2023_223040072/kuliah/pertemuan9/index.php -->
