@@ -1,4 +1,6 @@
 <?php 
+// $conn = mysqli_connect("localhost", "root", "", "pw2023_223040072");
+
 define('BASE_URL', '/PW2023_223040072/kuliah/pertemuan9/');
 
 // function dd($value)
